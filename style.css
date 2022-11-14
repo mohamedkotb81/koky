@@ -1,0 +1,153 @@
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+    position: relative;
+    width: 360px;
+    font-size: 28px;
+  }
+  
+  .navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    font-family: sans-serif;
+  }
+  
+  .navbar-icon-top .navbar-nav .nav-link > .fa {
+    top: 15px;
+    line-height: 3px;
+  }
+  
+  .navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+    top: 20px;
+  }
+  
+  @media (min-width: 576px) {
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
+      text-align: center;
+      display: table-cell;
+      height: 7px;
+      vertical-align: middle;
+      padding-top: 2.5px;
+      padding-bottom: 2.5px;
+    }
+  
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
+      display: block;
+      width: 48px;
+      margin: 2.5px auto 4px auto;
+      top: 3;
+      line-height: 4px;
+    }
+  
+    .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
+      top: 2.7px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
+      text-align: center;
+      display: table-cell;
+      height: 7px;
+      vertical-align: middle;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa {
+      display: block;
+      width: 48px;
+      margin: 2.5px auto 4px auto;
+      top: 2.5px;
+      line-height: 24px;
+    }
+  
+    .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
+      top: -7px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+      text-align: center;
+      display: table-cell;
+      height: 9px;
+      vertical-align: middle;
+      padding-top: 2.5px;
+      padding-bottom: 2.5px;
+    }
+  
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+      display: block;
+      width: 48px;
+      margin: 2.5px auto 4px auto;
+      top: 25px;
+      line-height: 44px;
+    }
+  
+    .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+      top: -7px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
+      text-align: center;
+      display: table-cell;
+      height: 7px;
+      vertical-align: middle;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa {
+      display: block;
+      width: 48px;
+      margin: 2px auto 4px auto;
+      top: 0;
+      line-height: 24px;
+    }
+  
+    .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
+      top: 7px;
+    }
+  }
+  body {
+    background: rgb(228, 226, 106) url("images/3.jpg") no-repeat;
+}
+
+h2 a {
+    color: rgb(214, 31, 18);
+    cursor: wait;
+    background-color: rgb(24, 225, 240);
+
+
+}
+
+form input {
+padding: 15px;
+}
+
+.button {
+  border: none;
+  color: rgb(14, 96, 219);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: rgb(14, 96, 219);} /* Blue */
+
+div{
+  border: none;
+ }
+.container{
+  border: 50px;
+  color: rgb(14, 96, 219);
+  padding: 15px 32px;
+}

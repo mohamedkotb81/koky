@@ -1,0 +1,52 @@
+
+{% extends 'base.html' %}
+
+{% block body%}
+<h2 style="color:maroon; margin: 30px 0 5px 25px;">Add Item</h2>
+<form class="form-inline">
+<input type="text" class="form-control" style=" width: 350px;" placeholder="M. Kotb Todo List Items ... ">
+<button type="submit" class="btn btn-danger">Click me ...</button>
+</form>
+<div class="row">
+    <div class="col">
+     <ul class="list-group">
+         <li class="list-group-item">Welcome to Django</li>
+         <li class="list-group-item">Dapibus ac facilisis in</li>
+         <li class="list-group-item">Morbi leo risus</li>
+         <li class="list-group-item">Porta ac consectetur acknowledgement</li>
+         <li class="list-group-item">Thank you Python</li>
+       </ul>
+ 
+    </div>
+ </div>
+
+ <div>
+<form style="margin: 30px 0px 10px 0px;">
+    <fieldset style="background: #f5e8b6; padding: 25px;">
+      <legend style="color:maroon; padding: -25px; margin: 10px 50 3px 25px;"><br />Contact Information</legend>
+  
+      <input type="text" name="firstname" style="padding: 1px 1px 1px 10px;" placeholder="First Name"><br /><br />
+      <input type="text" name="lastname" style="padding: 1px 1px 1px 10px;" placeholder="Last Name"><br /><br />
+      <input type="text" name="email" style="padding: 1px 1px 1px 10px;" placeholder="Email"><br /><br />
+      <input type="text" name="phone" style="padding: 1px 1px 1px 10px;" placeholder="Mobile Number"><br /><br />
+  
+      <p align="right" style="width: 196px; margin-bottom: -15px;">
+          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </p>
+    </fieldset>
+  </form>
+ </div>
+<div><h1 style="font-size: 40; align-content: center; padding:25px 5px 0 0;">Questions</h1></div>
+{% if latest_question_list %}
+   
+    {% for question in latest_question_list %}
+        <h2><a href="{% url 'poll:detail' question.id %}">{{ question.question_text }}</a></h2>
+    {% endfor %}
+ 
+{% else %}
+    <p>No answers are available.</p>
+{% endif %}
+
+
+
+{% endblock %}
